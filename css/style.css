@@ -8,7 +8,7 @@
     display: grid;
     height: 100vh;
     width: 100%;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
     "header"
@@ -39,7 +39,7 @@ header{
 .navbar li a{ 
     text-decoration: none;
     color: white;
-    font-size:1.875rem;
+    font-size:1.25rem;
 }
 .logo a img{
     padding-top: 0.3125rem;
@@ -49,7 +49,7 @@ header{
 main{
     grid-area: main;
 }
-.grid-main{
+.main-index{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +146,41 @@ footer{
     padding: 0.5rem;
 }
 /* palestras main */
+.pales-top{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.9375rem;
+}
+.pales-txt{
+    text-align: center;
+}
+.pales-txt h2{
+    padding-top: 0.625rem;
+}
 
+.section-palestras{    
+    display: flex; 
+    flex-direction: column; 
+    background-color: #24492e8e;
+    border-radius: 1.5625rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9375rem;
+    margin: 1.875rem;
+    padding: 1.25rem;
+}
+.section-palestras a{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+
+}
+.section-palestras a img{
+    height: 10rem; 
+    border-radius: 100%; 
+    border: 1px solid black;          
+    
+}
 /* tablet */
 @media (min-width:426px){
     header{
@@ -160,8 +194,15 @@ footer{
     .navbar{
         margin-right: 0.9375rem;
     }
+    .section-palestras{
+        display: grid;        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;                    
+    }
 }
-/* laptop */
+/* Note */
 @media (min-width:769px){
     .section-top{
         display: grid;
@@ -194,6 +235,13 @@ footer{
         border-radius: 100%;          
         border: 1px solid black;      
     }
+    .section-palestras{
+        display: grid;        
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;                    
+    }
 
 }
 /* pc */
@@ -224,5 +272,12 @@ footer{
         border: 1px solid black;
         text-align: center;
         width: 15rem ;        
+    }
+    .section-palestras{
+        display: grid;        
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;                    
     }
 }
