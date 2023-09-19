@@ -227,9 +227,37 @@ footer{
 .maps-pc{
     display: none;
 }
+/* CURSOS MAIN */
+.cursos-p{
+    display: none;
+}
+.cursos-t{
+    text-align: center;
+    margin: 0.9375rem;
+}
+.cursos-m{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1.875rem;
+    gap: 1.875rem;
+}
+.cursos-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.cursos-div p{
+    background-color: #24492e8e ;
+    border-radius: 1.5625rem;
+    padding: 0.625rem;
+}
+
 
 /* tablet */
-@media (min-width:426px){
+@media (min-width:590px){
     header{
         flex-direction: row;
         justify-content: space-between;
@@ -243,7 +271,7 @@ footer{
     }
     .section-palestras{
         display: grid;        
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;
         align-items: center;
         justify-items: center;                    
@@ -262,6 +290,22 @@ footer{
     }
     .maps-pc h3{
         padding: 0.9375rem;
+    }
+    .cursos-m{
+        flex-direction: row;
+    }
+    .cursos-p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        background-color:#24492e8e ;
+        padding: 0.9375rem;        
+        border-radius: 1.5625rem;
+    }
+    .cursos-p div img{
+        width: 21.25rem;
+        border-radius: 1.5625rem;
     }
 }
 /* Note */
@@ -322,6 +366,9 @@ footer{
         width: auto;
         border-radius: 1.5625rem;
     }
+    .cursos-p{   
+        margin: 0 6.25rem;     
+    }
 
 }
 /* pc */
@@ -364,7 +411,9 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;        
-        
+        flex-direction: row;       
+    }
+    .cursos-p{
+        margin: 0 25%;
     }
 }
