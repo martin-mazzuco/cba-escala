@@ -304,7 +304,7 @@ footer{
         border-radius: 1.5625rem;
     }
     .cursos-p div img{
-        width: 21.25rem;
+        width: 17.5rem;
         border-radius: 1.5625rem;
     }
 }
@@ -366,9 +366,6 @@ footer{
         width: auto;
         border-radius: 1.5625rem;
     }
-    .cursos-p{   
-        margin: 0 6.25rem;     
-    }
 
 }
 /* pc */
@@ -412,8 +409,5 @@ footer{
         align-items: center;
         justify-content: center;
         flex-direction: row;       
-    }
-    .cursos-p{
-        margin: 0 25%;
     }
 }
