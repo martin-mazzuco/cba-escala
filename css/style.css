@@ -1,117 +1,137 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.grid-cont{
+
+.grid-cont {
     display: grid;
     height: 100vh;
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
-    "header"
-    "main"
-    "footer"
+        "header"
+        "main"
+        "footer"
     ;
 }
 
 
-main{
+main {
     grid-area: main;
 }
-.main-index{
+
+.main-index {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.section-top{
+
+.section-top {
     padding-top: 0.3125rem;
-    background-color: white;    
+    background-color: white;
 }
-.buscador{ 
+
+.buscador {
     padding-bottom: 0.3125rem;
     font-size: 0.9375rem;
     text-align: center;
 }
-.buscador div{
+
+.buscador div {
     height: 20rem;
     width: 20rem;
     border-radius: 1.25rem;
     background-color: grey;
 }
-.galeria{
+
+.galeria {
     object-fit: contain;
     text-align: center;
     padding-bottom: 1.25rem;
-    }
-.galeria img{
+}
+
+.galeria img {
     height: 20rem;
     width: 20rem;
     border-radius: 1.25rem;
 }
+
 /* pales */
-.section-mid{
+.section-mid {
     padding-bottom: 0.3125rem;
 }
-.section-palesq{
+
+.section-palesq {
     display: none;
 }
-.section-pales{
+
+.section-pales {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #24492e8e;
     height: 3.125rem;
     width: 20rem;
-    border-radius: 1.25rem; 
+    border-radius: 1.25rem;
 }
+
 .section-pales a {
     text-decoration: none;
     color: white;
     font-size: 1.875rem;
 }
-.pales{
+
+.pales {
     display: none;
 }
+
 /* bot */
-.section-bot{
+.section-bot {
     padding: 0.9375rem 0 0.9375rem 0;
 }
-.section-cursos{
+
+.section-cursos {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #24492e8e;
     height: 3.125rem;
     width: 20rem;
-    border-radius: 1.25rem;     
+    border-radius: 1.25rem;
 }
+
 .section-cursos a {
     text-decoration: none;
     color: white;
     font-size: 1.875rem;
 }
-.section-cursosq{
+
+.section-cursosq {
     display: none;
 }
-.contenedor-cursos{
+
+.contenedor-cursos {
     display: none;
 }
+
 /* footer */
-footer{
-    grid-area: footer; 
+footer {
+    grid-area: footer;
     background-color: black;
     border-radius: 1.25rem 1.25rem 0 0;
 }
-.footer__cont{
+
+.footer__cont {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.footer__a a{
+
+.footer__a a {
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
@@ -119,26 +139,30 @@ footer{
     border-radius: 1.875rem;
     padding: 0.5rem;
 }
-.logo a img{   
+
+.logo a img {
     height: 5.625rem;
     width: auto;
 }
+
 /* palestras main */
-.pales-top{
+.pales-top {
     display: flex;
     flex-direction: column;
     padding-top: 0.9375rem;
 }
-.pales-txt{
+
+.pales-txt {
     text-align: center;
 }
-.pales-txt h2{
+
+.pales-txt h2 {
     padding-top: 0.625rem;
 }
 
-.section-palestras{    
-    display: flex; 
-    flex-direction: column; 
+.section-palestras {
+    display: flex;
+    flex-direction: column;
     background-color: #24492e8e;
     border-radius: 1.5625rem;
     align-items: center;
@@ -147,72 +171,85 @@ footer{
     margin: 1.875rem;
     padding: 1.25rem;
 }
-.section-palestras a{
+
+.section-palestras a {
     height: 10rem;
     width: 10rem;
     border-radius: 100%;
 
 }
-.section-palestras a img{
-    height: 10rem; 
-    border-radius: 100%; 
-    border: 1px solid black;          
-    
+
+.section-palestras a img {
+    height: 10rem;
+    border-radius: 100%;
+    border: 1px solid black;
+
 }
+
 /* IN PALES MAIN */
-.section-in-pales{
+.section-in-pales {
     text-align: center;
     padding: 1.25rem;
 }
-.section-horarios{
+
+.section-horarios {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.horarios-pales{
-    display: flex;    
+
+.horarios-pales {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:#24492e8e ;
+    background-color: #24492e8e;
     border-radius: 1.5625rem;
     list-style: none;
     padding: 0.9375rem;
     margin: 1.875rem;
 }
-.list-style li{
+
+.list-style li {
     text-align: center;
     list-style: none;
 }
 
-.horarios-pales img{    
+.horarios-pales img {
     width: 10.625rem;
 }
-.foto-pale{
+
+.foto-pale {
     display: none;
 }
-.maps-m{
+
+.maps-m {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.9375rem;    
-}
-.maps-m h3{
     padding: 0.9375rem;
 }
-.maps-pc{
+
+.maps-m h3 {
+    padding: 0.9375rem;
+}
+
+.maps-pc {
     display: none;
 }
+
 /* CURSOS MAIN */
-.cursos-p{
+.cursos-p {
     display: none;
 }
-.cursos-t{
+
+.cursos-t {
     text-align: center;
     margin: 0.9375rem;
 }
-.cursos-m{
+
+.cursos-m {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,141 +258,166 @@ footer{
     padding: 1.875rem;
     gap: 1.875rem;
 }
-.cursos-div{
+
+.cursos-div {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
 }
-.cursos-div p{
-    background-color: #24492e8e ;
+
+.cursos-div p {
+    background-color: #24492e8e;
     border-radius: 1.5625rem;
     padding: 0.625rem;
 }
 
 
 /* tablet */
-@media (min-width:590px){
-    header{
+@media (min-width:590px) {
+    header {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;        
+        align-items: center;
     }
-    .logo{
+
+    .logo {
         margin-left: 0.9375rem;
     }
-    .navbar{
+
+    .navbar {
         margin-right: 0.9375rem;
     }
-    .section-palestras{
-        display: grid;        
-        grid-template-columns: repeat(2,1fr);
+
+    .section-palestras {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         align-items: center;
-        justify-items: center;                    
+        justify-items: center;
     }
-    .horarios-pales{
-        width: 21.25rem;       
+
+    .horarios-pales {
+        width: 21.25rem;
     }
-    .maps-m{
+
+    .maps-m {
         display: none;
     }
-    .maps-pc{       
+
+    .maps-pc {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .maps-pc h3{
+
+    .maps-pc h3 {
         padding: 0.9375rem;
     }
-    .cursos-m{
+
+    .cursos-m {
         flex-direction: row;
     }
-    .cursos-p{
+
+    .cursos-p {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1.25rem;
-        background-color:#24492e8e ;
-        padding: 0.9375rem;        
+        background-color: #24492e8e;
+        padding: 0.9375rem;
         border-radius: 1.5625rem;
         margin-bottom: 1.5625rem;
     }
-    .cursos-p div img{
+
+    .cursos-p div img {
         width: 17.5rem;
         border-radius: 1.5625rem;
     }
 }
+
 /* Note */
-@media (min-width:769px){
-    .section-top{
+@media (min-width:769px) {
+    .section-top {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         gap: 1.5625rem;
-        
+
     }
-    .section-pales{
+
+    .section-pales {
         display: none;
     }
-    .section-palesq{
+
+    .section-palesq {
         display: flex;
         justify-content: center;
     }
-    .pales{
+
+    .pales {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 0.625rem;
         background-color: #24492e8e;
         border-radius: 1.25rem;
     }
-    .pales a{        
+
+    .pales a {
         border-radius: 100%;
     }
-    .pales a img{
+
+    .pales a img {
         height: 15rem;
         width: auto;
         margin: 0.625rem;
-        border-radius: 100%;          
-        border: 1px solid black;      
+        border-radius: 100%;
+        border: 1px solid black;
     }
-    .section-palestras{
-        display: grid;        
-        grid-template-columns: repeat(4,1fr);
+
+    .section-palestras {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         align-items: center;
-        justify-items: center;                    
-    }    
-    .foto-pale{
+        justify-items: center;
+    }
+
+    .foto-pale {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 0.9375rem 0 ;
+        padding: 0.9375rem 0;
     }
-    .section-horarios{
+
+    .section-horarios {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .foto-pale img{
-        height: 450px;
-        width: auto;
+
+    .foto-pale img {
+        height: auto;
+        width: 37.5rem;
         border-radius: 1.5625rem;
     }
 
 }
+
 /* pc */
-@media (min-width:1025px){
-    .section-cursos{
-        display:none ;
+@media (min-width:1025px) {
+    .section-cursos {
+        display: none;
     }
-    .section-cursosq{
+
+    .section-cursosq {
         display: flex;
         justify-content: center;
-    }   
-    .contenedor-cursos{
+    }
+
+    .contenedor-cursos {
         display: flex;
         height: 20rem;
         align-items: center;
@@ -365,27 +427,37 @@ footer{
         gap: 0.9375rem;
         padding: 1.25rem;
     }
+
     .contenedor-cursos img {
         height: 15rem;
-        width: auto;        
+        width: auto;
         border-radius: 1.5625rem;
     }
-    .cursos-texto{
+
+    .cursos-texto {
         border: 1px solid black;
         text-align: center;
-        width: 15rem ;        
+        width: 15rem;
     }
-    .section-palestras{
-        display: grid;        
-        grid-template-columns: repeat(5,1fr);
+
+    .section-palestras {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto;
         align-items: center;
-        justify-items: center;                    
+        justify-items: center;
     }
-    .section-horarios{
+
+    .section-horarios {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;       
+        flex-direction: row;
+    }
+
+    .foto-pale img {
+        height: auto;
+        width: 800px;
+        border-radius: 1.5625rem;
     }
 }
