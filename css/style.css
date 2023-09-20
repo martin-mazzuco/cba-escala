@@ -395,12 +395,11 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: center;        
     }
 
     .foto-pale img {
-        height: auto;
-        width: 37.5rem;
+        height: 100%;        
         border-radius: 1.5625rem;
     }
 
@@ -450,14 +449,15 @@ footer {
 
     .section-horarios {
         display: flex;
-        align-items: center;
+        align-items: normal;
         justify-content: center;
         flex-direction: row;
+        height: 100vh;
+    }
+    .card{
+        height: 100%;
+        margin: 0 30px;
     }
 
-    .foto-pale img {
-        height: auto;
-        width: 800px;
-        border-radius: 1.5625rem;
-    }
+    
 }
